@@ -44,8 +44,14 @@
       "last 1 safari version"
     ]
   },
+  "react-dotenv": {
+    "whitelist": [
+      "REACT_APP_BASE_URL"
+    ]
+  },
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "json-server": "^1.0.0-beta.3"
+    "json-server": "^1.0.0-beta.3",
+    "dotenv-webpack": "^8.1.0"
   }
 }

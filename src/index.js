@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <CartProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/csa-project-shopping-cart-app">
         <App />
       </BrowserRouter>
     </CartProvider>
