@@ -9,11 +9,11 @@ const Wrapper = styled.div`
 
 export default function ConfirmationPage() {
   const location = useLocation();
-  const name = location.state?.name || "Customer";
+  const name = location.state?.name || "customer";
 
   return (
     <Wrapper>
-      <h1>Thank You, {name}!</h1>
+      <h1>Thank you, {name}!</h1>
       <p>Your order has been placed successfully.</p>
       <Link to="/">Go back to shopping</Link>
     </Wrapper>

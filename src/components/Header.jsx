@@ -11,7 +11,9 @@ export default function Header() {
 
   return (
     <HeaderBar>
-      <h2>🛒 ShopEasy</h2>
+      <Link to="/">
+      <Logo src="./images/logo.png"/>
+      </Link>
       <Nav>
         <Link to="/" className={location.pathname === "/" ? "active" : ""}>
           Home
@@ -29,41 +31,60 @@ export default function Header() {
 }
 
 const HeaderBar = styled.header`
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.8rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
   padding: 1rem 2rem;
   background-color: #24292f;
-  color: white;
+  color: #48ecec;
 
-  @media (min-width: 600px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  @media (max-width: 400px) {
+    justify-content: center;
+    Nav {
+      width: 100%;
+    }
   }
 `;
+
+const Logo = styled.img`
+  width: 150px;
+  height: auto;
+  margin-bottom: 0.5rem;
+
+  @media (max-width: 400px) {
+    margin-bottom: 0;
+    width: 70%;
+  }
+`;
+
 const Nav = styled.nav`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
   gap: 1rem;
 
-  @media (min-width: 600px) {
-    flex-direction: row;
-  }
-
   a {
-    color: white;
+    color: #3be8f1;
     text-decoration: none;
     font-weight: 500;
+    &:hover {
+      color: #71ffff;
+      text-shadow: 0 0 2px #ffffff;
+      transition: 0.3s;
+    }
 
     &.active {
-      text-decoration: underline;
+      color: white;
+      text-shadow: 0 0 2px #ffffff;
+      font-weight: 700;
     }
   }
 `;
 const CartBadge = styled.span`
-  background: tomato;
+  background: #ff196d;
   color: white;
   font-size: 0.8rem;
   padding: 0.25rem 0.6rem;

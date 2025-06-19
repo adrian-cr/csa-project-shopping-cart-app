@@ -56,7 +56,6 @@ export default function CheckoutPage() {
 
       <Form onSubmit={handleSubmit}>
         <h3>Shipping Info</h3>
-
         <label htmlFor="name">Full Name</label>
         <input
           name="name"
@@ -88,7 +87,7 @@ export default function CheckoutPage() {
 
         {error && <p style={{ color: "red" }}>{error}</p>}
 
-        <button type="submit">Place Order</button>
+        <Button type="submit">Place Order</Button>
       </Form>
     </Wrapper>
   );
@@ -97,14 +96,28 @@ export default function CheckoutPage() {
 /* STYLES */
 const Wrapper = styled.div`
   padding: 1rem;
-
   @media (min-width: 768px) {
     padding: 2rem 4rem;
   }
 `;
 const Form = styled.form`
+  align-items: center;
+  background-color: #efefef;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
   max-width: 500px;
   margin-top: 2rem;
+  min-width: 100%;
+  padding: 30px;
+
+  * {
+    max-width: 400px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
 
   label {
     display: block;
@@ -119,5 +132,21 @@ const Form = styled.form`
 
   button {
     margin-top: 1.5rem;
+  }
+`;
+
+const Button = styled.button`
+  background-color: #4373f9;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  min-height: 40px;
+  min-width: 200px;
+  padding: 5px 15px;
+  &:hover {
+    background-color: #28bbff;
+    transition: 300ms;
   }
 `;

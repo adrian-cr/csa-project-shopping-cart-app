@@ -32,7 +32,7 @@ export default function CartPage() {
       <Total>Total: ${getTotal().toFixed(2)}</Total>
       <p style={{ marginTop: "1rem" }}>
         <Link to="/checkout">
-          <button>Proceed to Checkout</button>
+          <Button>Proceed to Checkout</Button>
         </Link>
       </p>
     </Wrapper>
@@ -49,11 +49,27 @@ const Wrapper = styled.div`
 `;
 const Total = styled.div`
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 30px;
   font-weight: bold;
 `;
 const EmptyMessage = styled.p`
   text-align: center;
   font-size: 1.1rem;
   color: #777;
+`;
+
+const Button = styled.button`
+  background-color: #4373f9;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  min-height: 40px;
+  min-width: 200px;
+  padding: 5px 15px;
+  &:hover {
+    background-color: #28bbff;
+    transition: 300ms;
+  }
 `;

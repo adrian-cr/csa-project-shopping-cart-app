@@ -30,7 +30,7 @@ export default function ListingsPage() {
 
   return (
     <div>
-      <h1 style={{ textAlign: "center", marginTop: "1rem" }}>Products</h1>
+      <h1 style={{ textAlign: "center", marginTop: "1rem" }}>New Arrivals!</h1>
       <Grid>
         {products.map((product) => (
           <ProductCard key={product.id} product={product} onAddToCart={handleAddToCart} />
@@ -43,7 +43,10 @@ export default function ListingsPage() {
 /* STYLES */
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
+  align-content: center;
+  justify-items: center;
   margin-top: 2rem;
+  padding: 0 5% 5%;
 `;
