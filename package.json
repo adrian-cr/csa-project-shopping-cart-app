@@ -1,7 +1,7 @@
 {
   "name": "csa-project-shopping-cart-app",
   "version": "0.1.0",
-  "homepage": "https://adrian-cr.github.io/sneak-e",
+  "homepage": "https://adrian-cr.github.io/csa-project-shopping-cart-app",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -19,6 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
