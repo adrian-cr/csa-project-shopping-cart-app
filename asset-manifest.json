@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sneak-e/static/css/main.08d55997.css",
-    "main.js": "/sneak-e/static/js/main.fd3e4172.js",
-    "index.html": "/sneak-e/index.html",
-    "main.08d55997.css.map": "/sneak-e/static/css/main.08d55997.css.map",
-    "main.fd3e4172.js.map": "/sneak-e/static/js/main.fd3e4172.js.map"
+    "main.css": "/csa-project-shopping-cart-app/static/css/main.08d55997.css",
+    "main.js": "/csa-project-shopping-cart-app/static/js/main.5210a497.js",
+    "index.html": "/csa-project-shopping-cart-app/index.html",
+    "main.08d55997.css.map": "/csa-project-shopping-cart-app/static/css/main.08d55997.css.map",
+    "main.5210a497.js.map": "/csa-project-shopping-cart-app/static/js/main.5210a497.js.map"
   },
   "entrypoints": [
     "static/css/main.08d55997.css",
-    "static/js/main.fd3e4172.js"
+    "static/js/main.5210a497.js"
   ]
 }
